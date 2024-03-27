@@ -1,0 +1,7 @@
+<ion-card *ngFor="let komik of komiks;let i = index">
+  <ion-card-content>
+    <ion-icon *ngFor="let star of [1,2,3,4,5]; let i = index" name="Star" size="large"
+      color="warning" [hidden]="i+1>komik.nilai"></ion-icon><br />
+    <ion-label>{{komik.user_name}} : {{komik.ulasan}}</ion-label>
+  </ion-card-content>
+</ion-card>

@@ -1,0 +1,9 @@
+<br />
+<ion-card *ngFor="let kategori of kategories;let i = index">
+  <ion-card-content>
+    <ion-img src="{{kategori.url_kategori}}">
+    </ion-img>
+    <h4><b>{{kategori.kategori}}</b></h4>
+    <ion-label color='primary' routerLink='/komikkategori/{{i+1}}'> Daftar Komik</ion-label>
+  </ion-card-content>
+</ion-card>
