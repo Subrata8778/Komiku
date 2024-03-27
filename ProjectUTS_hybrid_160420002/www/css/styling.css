@@ -1,0 +1,53 @@
+.custom-accordion .icon-plus,
+.custom-accordion .icon-minus {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  line-height: 20px;
+  text-align: center;
+}
+
+.custom-accordion .icon-minus {
+  display: none;
+}
+
+.custom-accordion .accordion-item-opened .icon-minus {
+  display: inline-block;
+}
+
+.custom-accordion .accordion-item-opened .icon-plus {
+  display: none;
+}
+
+.custom-accordion .accordion-item-content {
+  padding: 0px 15px;
+}
+
+/* style image for card */
+.img{
+  height: 500px;
+  object-fit: cover;
+}
+
+.flex{
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 600px){
+  .img{
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .btnBaca{
+    font-size: 10px;
+    height: 30px;
+  }
+
+  .sizeIcon{
+    font-size: 15px;
+  }
+}
